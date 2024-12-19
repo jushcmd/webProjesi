@@ -8,8 +8,11 @@ body {
     padding: 0;
     color: #333;
     line-height: 1.6;
+    scroll-snap-type: none;
   
 }
+
+/* Navbar Başlangıç */
 
 .navbar {
     width: 90%;
@@ -70,20 +73,16 @@ nav ul li a:hover {
     color: #0ec26e;
 }
 
-
-
-
-@media (max-width: 768px) {
-
-
-    .slider {
-        display: none;
-    }
-
-    
+.menu-toggle {
+    display: none;
 }
 
 
+/* Navbar Bitiş */
+
+
+
+/* Banner Başlangıç */
 
 .banner {
     background: url('https://www.apple.com/v/home/bw/images/heroes/iphone-16-pro/hero_iphone16pro_avail__fnf0f9x70jiy_largetall.jpg') no-repeat center center/cover;
@@ -125,6 +124,10 @@ nav ul li a:hover {
     color: #fff;
 }
 
+/* Banner Bitiş */
+
+/* Ürünler Başlangıç */
+
 .urunler {
     text-align: center;
     padding: 50px 0;
@@ -137,11 +140,13 @@ nav ul li a:hover {
 
 .urun-listesi {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dinamik sütun düzeni */
+    gap: 20px; /* Kartlar arasında boşluk */
+    margin: 0 30px;
 }
 
 .urun {
+   
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 15px;
@@ -186,8 +191,12 @@ button {
 }
 
 button:hover {
-    background: #45a049;
+    background: #116115;
 }
+
+/* Ürünler Bitiş */
+
+/* Hakkımızda Başlangıç */
 
 .hakkimizda {
     background: #f4f4f4;
@@ -206,6 +215,8 @@ button:hover {
     max-width: 700px;
     margin: auto;
 }
+
+/* Hakkımızda Bitiş */
 
 /* İletişim  Başlangıç */
 .iletisim {
@@ -256,16 +267,20 @@ button:hover {
 /* İletişim Bölgesi - Bitiş */
 
 
+/* AltBilgi Başlangıç  */
+
 .altbilgi-icerik {
     background: #333;
     color: white;
     text-align: center;
     padding: 20px 0;
+   
 }
 
 .altbilgi-icerik p {
     margin: 0;
     font-size: 14px;
+    padding-bottom: 10px;
 }
 
 .sosyal-ikonlar a {
@@ -273,15 +288,46 @@ button:hover {
     margin: 0 10px;
 }
 
-.sosyal-ikonlar img {
+.sosyal-ikonlar i {
     width: 24px;
     height: 24px;
-    filter: invert(1);
+    color: #0ec26e;
     transition: transform 0.3s;
 }
 
-.sosyal-ikonlar img:hover {
+.sosyal-ikonlar i:hover {
     transform: scale(1.2);
 }
 
+/* AltBilgi Bitiş  */
 
+/* Responsive Başlangıç */
+
+@media (max-width: 768px) {
+
+
+    .slider {
+        display: none;
+    }
+
+    .menu-toggle {
+        float: right;
+        display: block;
+    }
+
+    nav ul {
+        padding-top: 30px;
+        display: none;
+        
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul.show {
+        display: flex;
+        gap: 20px;
+  
+    }
+}
+
+/* Responsive Bitiş */
