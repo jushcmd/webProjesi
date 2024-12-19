@@ -1,0 +1,287 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+  
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: #013ca0;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 10px 10px rgba(31, 31, 32, 0.432);
+}
+
+header h1 {
+    display: inline-block;
+    margin: 0;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0ec26e;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+
+    .slider {
+        display: none;
+    }
+
+    
+}
+
+
+
+.banner {
+    background: url('https://www.apple.com/v/home/bw/images/heroes/iphone-16-pro/hero_iphone16pro_avail__fnf0f9x70jiy_largetall.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: black;
+    padding: 100px 20px;
+}
+
+.banner-icerik {
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #FFD700;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #013ca0;
+    color: #fff;
+}
+
+.urunler {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.urunler h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.urun-listesi {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.urun {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.urun:hover {
+    transform: scale(1.05);
+}
+
+.urun img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.urun h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.fiyat {
+    font-size: 18px;
+    color: #4CAF50;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.hakkimizda {
+    background: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hakkimizda h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.hakkimizda p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* İletişim  Başlangıç */
+.iletisim {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.iletisim h2 {
+    color: #013ca0;
+    margin-bottom: 20px;
+}
+
+.iletisim form {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.iletisim label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.iletisim input, .iletisim textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.iletisim button {
+    background: #013ca0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.iletisim button:hover {
+    background: #1b9956;
+}
+/* İletişim Bölgesi - Bitiş */
+
+
+.altbilgi-icerik {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.altbilgi-icerik p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.sosyal-ikonlar a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.sosyal-ikonlar img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+    transition: transform 0.3s;
+}
+
+.sosyal-ikonlar img:hover {
+    transform: scale(1.2);
+}
+
+
